@@ -7,3 +7,17 @@ D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\Administrad
 D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.csproj.CoreCompileInputs.cache
 D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.exe
 D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.pdb
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\bin\Debug\AdministradorDeTareas.exe.config
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\bin\Debug\AdministradorDeTareas.exe
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\bin\Debug\AdministradorDeTareas.pdb
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.csproj.AssemblyReference.cache
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.Properties.Resources.resources
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.csproj.GenerateResource.cache
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.csproj.CoreCompileInputs.cache
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.exe
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.pdb
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\bin\Debug\MetroFramework.Design.dll
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\bin\Debug\MetroFramework.dll
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\bin\Debug\MetroFramework.Fonts.dll
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.MainForm.resources
+D:\Emanuel\Proyectos Dev\AdministradorDeTareas\AdministradorDeTareas\obj\Debug\AdministradorDeTareas.csproj.CopyComplete
