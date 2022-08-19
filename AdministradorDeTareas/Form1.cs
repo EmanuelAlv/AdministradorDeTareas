@@ -43,22 +43,35 @@ namespace AdministradorDeTareas
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-
+            UpdateProcessList();
         }
 
         private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            txtProceso.Text = dgvAdministrador.CurrentRow.Cells[0].Value.ToString();
         }
 
         private void metroTile1_Click_1(object sender, EventArgs e)
         {
-
+            try
+            {
+                foreach (Process p in Process.GetProcesses())
+                {
+                    if (p.ProcessName == txtProceso.Text)
+                    {
+                        p.Kill(); //Eliminamos el proceso
+                    }
+                }
+            }
+            catch (Exception x) //Catch al presionar boton detener sin seleccionar un proceso antes
+            {
+                MessageBox.Show("Selecciona un proceso." + x, "error al detener", MessageBoxButtons.OK);
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void txtNombreProceso_Click(object sender, EventArgs e)

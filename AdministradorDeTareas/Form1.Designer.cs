@@ -34,18 +34,18 @@ namespace AdministradorDeTareas
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.dgvAdministrador = new MetroFramework.Controls.MetroGrid();
-            this.dgvProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvFisica = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvVirtual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnActualizar = new MetroFramework.Controls.MetroTile();
             this.btnDetener = new MetroFramework.Controls.MetroTile();
             this.btnSalir = new MetroFramework.Controls.MetroTile();
             this.txtContador = new System.Windows.Forms.Label();
             this.txtNombreProceso = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtProceso = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dgvProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvFisica = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvVirtual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdministrador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -101,36 +101,6 @@ namespace AdministradorDeTareas
             this.dgvAdministrador.Style = MetroFramework.MetroColorStyle.Silver;
             this.dgvAdministrador.TabIndex = 0;
             this.dgvAdministrador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
-            // 
-            // dgvProceso
-            // 
-            this.dgvProceso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvProceso.HeaderText = "Proceso";
-            this.dgvProceso.Name = "dgvProceso";
-            // 
-            // dgvID
-            // 
-            this.dgvID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvID.HeaderText = "ID";
-            this.dgvID.Name = "dgvID";
-            // 
-            // dgvFisica
-            // 
-            this.dgvFisica.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvFisica.HeaderText = "Memoria Física";
-            this.dgvFisica.Name = "dgvFisica";
-            // 
-            // dgvVirtual
-            // 
-            this.dgvVirtual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvVirtual.HeaderText = "Memoria Virtual";
-            this.dgvVirtual.Name = "dgvVirtual";
-            // 
-            // dgvCPU
-            // 
-            this.dgvCPU.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvCPU.HeaderText = "CPU";
-            this.dgvCPU.Name = "dgvCPU";
             // 
             // btnActualizar
             // 
@@ -197,14 +167,14 @@ namespace AdministradorDeTareas
             this.txtNombreProceso.Text = "Nombre del Proceso";
             this.txtNombreProceso.Click += new System.EventHandler(this.txtNombreProceso_Click);
             // 
-            // label1
+            // txtProceso
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(660, 493);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(10, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "-";
+            this.txtProceso.AutoSize = true;
+            this.txtProceso.Location = new System.Drawing.Point(660, 493);
+            this.txtProceso.Name = "txtProceso";
+            this.txtProceso.Size = new System.Drawing.Size(10, 13);
+            this.txtProceso.TabIndex = 6;
+            this.txtProceso.Text = "-";
             // 
             // pictureBox1
             // 
@@ -216,13 +186,44 @@ namespace AdministradorDeTareas
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // dgvProceso
+            // 
+            this.dgvProceso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvProceso.HeaderText = "Proceso";
+            this.dgvProceso.Name = "dgvProceso";
+            this.dgvProceso.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // dgvID
+            // 
+            this.dgvID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvID.HeaderText = "ID";
+            this.dgvID.Name = "dgvID";
+            // 
+            // dgvFisica
+            // 
+            this.dgvFisica.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvFisica.HeaderText = "Memoria Física";
+            this.dgvFisica.Name = "dgvFisica";
+            // 
+            // dgvVirtual
+            // 
+            this.dgvVirtual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvVirtual.HeaderText = "Memoria Virtual";
+            this.dgvVirtual.Name = "dgvVirtual";
+            // 
+            // dgvCPU
+            // 
+            this.dgvCPU.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvCPU.HeaderText = "CPU";
+            this.dgvCPU.Name = "dgvCPU";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 514);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtProceso);
             this.Controls.Add(this.txtNombreProceso);
             this.Controls.Add(this.txtContador);
             this.Controls.Add(this.btnSalir);
@@ -246,18 +247,18 @@ namespace AdministradorDeTareas
         #endregion
 
         private MetroFramework.Controls.MetroGrid dgvAdministrador;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvProceso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvFisica;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvVirtual;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCPU;
         private MetroFramework.Controls.MetroTile btnActualizar;
         private MetroFramework.Controls.MetroTile btnDetener;
         private MetroFramework.Controls.MetroTile btnSalir;
         private System.Windows.Forms.Label txtContador;
         private System.Windows.Forms.Label txtNombreProceso;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtProceso;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvProceso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvFisica;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvVirtual;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCPU;
     }
 }
 
