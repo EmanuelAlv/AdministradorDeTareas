@@ -29,10 +29,11 @@ namespace AdministradorDeTareas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvPrincipal = new MetroFramework.Controls.MetroGrid();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.dgvAdministrador = new MetroFramework.Controls.MetroGrid();
             this.dgvProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvFisica = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,59 +45,62 @@ namespace AdministradorDeTareas
             this.txtContador = new System.Windows.Forms.Label();
             this.txtNombreProceso = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAdministrador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvPrincipal
+            // dgvAdministrador
             // 
-            this.dgvPrincipal.AccessibleName = "dgvAdministrador";
-            this.dgvPrincipal.AllowUserToResizeRows = false;
-            this.dgvPrincipal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgvPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvPrincipal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvPrincipal.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.dgvPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPrincipal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvAdministrador.AccessibleName = "dgvAdministrador";
+            this.dgvAdministrador.AllowUserToResizeRows = false;
+            this.dgvAdministrador.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dgvAdministrador.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvAdministrador.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvAdministrador.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAdministrador.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAdministrador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAdministrador.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvProceso,
             this.dgvID,
             this.dgvFisica,
             this.dgvVirtual,
             this.dgvCPU});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPrincipal.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvPrincipal.EnableHeadersVisualStyles = false;
-            this.dgvPrincipal.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dgvPrincipal.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgvPrincipal.Location = new System.Drawing.Point(0, 63);
-            this.dgvPrincipal.Name = "dgvPrincipal";
-            this.dgvPrincipal.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrincipal.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.dgvPrincipal.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvPrincipal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPrincipal.Size = new System.Drawing.Size(800, 299);
-            this.dgvPrincipal.TabIndex = 0;
-            this.dgvPrincipal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAdministrador.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvAdministrador.EnableHeadersVisualStyles = false;
+            this.dgvAdministrador.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dgvAdministrador.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dgvAdministrador.Location = new System.Drawing.Point(-41, 74);
+            this.dgvAdministrador.Name = "dgvAdministrador";
+            this.dgvAdministrador.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAdministrador.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvAdministrador.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvAdministrador.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAdministrador.Size = new System.Drawing.Size(841, 319);
+            this.dgvAdministrador.Style = MetroFramework.MetroColorStyle.Silver;
+            this.dgvAdministrador.TabIndex = 0;
+            this.dgvAdministrador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
             // 
             // dgvProceso
             // 
@@ -132,7 +136,7 @@ namespace AdministradorDeTareas
             // 
             this.btnActualizar.AccessibleName = "btnActualizar";
             this.btnActualizar.ActiveControl = null;
-            this.btnActualizar.Location = new System.Drawing.Point(28, 378);
+            this.btnActualizar.Location = new System.Drawing.Point(23, 433);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(95, 34);
             this.btnActualizar.TabIndex = 1;
@@ -148,7 +152,7 @@ namespace AdministradorDeTareas
             // 
             this.btnDetener.AccessibleName = "btnActualizar";
             this.btnDetener.ActiveControl = null;
-            this.btnDetener.Location = new System.Drawing.Point(159, 378);
+            this.btnDetener.Location = new System.Drawing.Point(153, 433);
             this.btnDetener.Name = "btnDetener";
             this.btnDetener.Size = new System.Drawing.Size(94, 34);
             this.btnDetener.TabIndex = 2;
@@ -163,7 +167,7 @@ namespace AdministradorDeTareas
             // 
             this.btnSalir.AccessibleName = "btnActualizar";
             this.btnSalir.ActiveControl = null;
-            this.btnSalir.Location = new System.Drawing.Point(288, 378);
+            this.btnSalir.Location = new System.Drawing.Point(682, 433);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(95, 34);
             this.btnSalir.TabIndex = 3;
@@ -177,7 +181,7 @@ namespace AdministradorDeTareas
             // txtContador
             // 
             this.txtContador.AutoSize = true;
-            this.txtContador.Location = new System.Drawing.Point(26, 440);
+            this.txtContador.Location = new System.Drawing.Point(10, 493);
             this.txtContador.Name = "txtContador";
             this.txtContador.Size = new System.Drawing.Size(35, 13);
             this.txtContador.TabIndex = 4;
@@ -186,7 +190,7 @@ namespace AdministradorDeTareas
             // txtNombreProceso
             // 
             this.txtNombreProceso.AutoSize = true;
-            this.txtNombreProceso.Location = new System.Drawing.Point(567, 440);
+            this.txtNombreProceso.Location = new System.Drawing.Point(551, 493);
             this.txtNombreProceso.Name = "txtNombreProceso";
             this.txtNombreProceso.Size = new System.Drawing.Size(103, 13);
             this.txtNombreProceso.TabIndex = 5;
@@ -196,28 +200,44 @@ namespace AdministradorDeTareas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(676, 440);
+            this.label1.Location = new System.Drawing.Point(660, 493);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(10, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "-";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::AdministradorDeTareas.Properties.Resources.umgIcon;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(334, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 27);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 473);
+            this.ClientSize = new System.Drawing.Size(800, 514);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombreProceso);
             this.Controls.Add(this.txtContador);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDetener);
             this.Controls.Add(this.btnActualizar);
-            this.Controls.Add(this.dgvPrincipal);
+            this.Controls.Add(this.dgvAdministrador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "Administrador de Tareas UMG";
+            this.TransparencyKey = System.Drawing.Color.Empty;
             this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAdministrador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +245,7 @@ namespace AdministradorDeTareas
 
         #endregion
 
-        private MetroFramework.Controls.MetroGrid dgvPrincipal;
+        private MetroFramework.Controls.MetroGrid dgvAdministrador;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvProceso;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvFisica;
@@ -237,6 +257,7 @@ namespace AdministradorDeTareas
         private System.Windows.Forms.Label txtContador;
         private System.Windows.Forms.Label txtNombreProceso;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
