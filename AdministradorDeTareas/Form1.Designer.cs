@@ -191,6 +191,7 @@ namespace AdministradorDeTareas
             this.dgvProceso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgvProceso.HeaderText = "Proceso";
             this.dgvProceso.Name = "dgvProceso";
+            this.dgvProceso.ReadOnly = true;
             this.dgvProceso.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // dgvID
@@ -198,24 +199,28 @@ namespace AdministradorDeTareas
             this.dgvID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgvID.HeaderText = "ID";
             this.dgvID.Name = "dgvID";
+            this.dgvID.ReadOnly = true;
             // 
             // dgvFisica
             // 
             this.dgvFisica.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgvFisica.HeaderText = "Memoria Física";
             this.dgvFisica.Name = "dgvFisica";
+            this.dgvFisica.ReadOnly = true;
             // 
             // dgvVirtual
             // 
             this.dgvVirtual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgvVirtual.HeaderText = "Memoria Virtual";
             this.dgvVirtual.Name = "dgvVirtual";
+            this.dgvVirtual.ReadOnly = true;
             // 
             // dgvCPU
             // 
             this.dgvCPU.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgvCPU.HeaderText = "CPU";
             this.dgvCPU.Name = "dgvCPU";
+            this.dgvCPU.ReadOnly = true;
             // 
             // MainForm
             // 
